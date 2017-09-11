@@ -1,7 +1,7 @@
 CC = $(CROSS)gcc
 LINK = $(CROSS)gcc
 AR = $(CROSS)ar
-CFLAGS = -D_POSIX_C_SOURCE=2 -DFP_TYPE=float -Og -g -std=c99 -Wall -fPIC $(CFLAGSEXT) -fopenmp
+CFLAGS = -D_POSIX_C_SOURCE=2 -DFP_TYPE=double -Og -g -std=c99 -Wall -fPIC $(CFLAGSEXT) -fopenmp
 ARFLAGS = -rv
 OBJS = ciglet.o fftsg.o fastmedian.o wavfile.o
 
